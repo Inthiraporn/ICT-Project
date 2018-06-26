@@ -8,21 +8,22 @@
         </h2>
       </ion-title>
     </ion-navbar>
-    <div>
-      <ion-segment [(ngModel)]="sn"  style="background-color:#778899">
-        <ion-segment-button id="segment-button" value="sn1">
-          <span style="font-size: 25px;text-align: center;color: #FFFFFF">สถานะข้อมูลอาคาร</span>
-        </ion-segment-button>
-  
-        <ion-segment-button id="segment-button" value="sn2">
-          <span style="font-size: 25px;text-align: center ;color: #FFFFFF">FS ให้แก้ไข</span>
-        </ion-segment-button>
-  
-        <ion-segment-button id="segment-button" value="sn3">
-          <span style="font-size: 25px;text-align: center ;color: #FFFFFF">สน.2-2 พื้นที่ย่อย</span>
-        </ion-segment-button>
-      </ion-segment>
-    </div>
+    <div >
+        <ion-segment [(ngModel)]="sn">
+          <ion-segment-button id="segment-button" value="sn1"  style="font-family:Arial; font-size: 18px; background-color:#0066FF; color: 
+          #FFFFFF" >
+            สถานะข้อมูลอาคาร
+          </ion-segment-button>
+          <ion-segment-button id="segment-button" value="sn2" style="font-family:Arial; font-size: 18px; background-color:#0066FF; color: 
+          #FFFFFF" >
+            FS ให้แก้ข้อมูล
+          </ion-segment-button>
+          <ion-segment-button id="segment-button" value="sn3" style="font-family:Arial; font-size: 18px; background-color:#0066FF; color: 
+          #FFFFFF" >
+            สน.2-2 พื้นที่ย่อย
+          </ion-segment-button>
+        </ion-segment>
+      </div>
   </ion-header>
   
   <ion-content padding text-center>
@@ -140,7 +141,7 @@
                   <ion-item>
                       <ion-label style="font-size: 18px; color: #000000">ข้อมูล</ion-label>
                       <ion-select [(ngModel)]="snn" interface="popover">
-                        <ion-option value="1">ข้อมูลทั้งหมด</ion-option>
+                        <ion-option value="1" >ข้อมูลทั้งหมด</ion-option>
                         <ion-option value="2">ส่งแล้ว</ion-option>
                         <ion-option value="3">รอส่ง</ion-option>
                         <ion-option value="4">หยุดชั่วคราว</ion-option>
